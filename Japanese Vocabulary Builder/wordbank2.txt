@@ -1,0 +1,77 @@
+いちがつ January
+にがつ February
+さんがつ March
+しがつ April
+ごがつ May
+ろくがつ June
+しちがつ July
+はちがつ August
+くがつ September
+じゅうがつ October
+じゅういちがつ November
+じゅうにがつ December
+アメリカ United States
+イギリス United Kingdom
+インド India
+カナダ Canada
+かんこく Korea
+スペイン Spain
+たいわん Taiwan
+ちゅうごく China
+ドイツ Germany
+にほん Japan
+フランス France
+メキシコ Mexico
+ロシア Russia
+えいご English
+ヒンズーご Hindu
+かんごくご Korean
+スペインご Spanish
+ちゅうごくご Chinese
+ドイツご German
+にほんご Japanese
+フランスご French
+ロシアご Russian
+あき fall
+あめ rain
+えいが movie
+おんがく music
+かみなり thunder
+くに country
+くもり cloudy
+こうえん park
+パーティ party
+コーンサート concert
+さい years-old
+しあい contest
+しゃしん photography
+しゅみ hobby
+しんちゃう height
+スポーツ sports
+たいじゅう weight
+たんじょうび birthday
+つり fishing
+テニス tennis
+デパート department store
+てんき weather
+どこしょ reading
+とし age
+なつ summer
+はる spring
+ふゆ winter
+ゆき snow
+りょこう travel
+あたたかい warm
+あつい hot
+いい good
+いや awful
+さむい cold
+すずしい cool
+へん strange
+むしあつい hot and humid
+いきます to go
+いつ when
+どこどのぐらい how many
+きょう today
+あした tomorrow
+らいしゅう next week

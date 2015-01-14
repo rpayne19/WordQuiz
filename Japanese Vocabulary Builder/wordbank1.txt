@@ -1,0 +1,37 @@
+です　is
+ではありません is not
+いいえ no
+はい yes
+こちら this side
+こちらこそ me too
+この this
+ただしい correct
+ちがいます incorrect
+はじめまして how do you do
+どうぞよろしく nice to meet you
+いちねんせい 　freshmen
+ウエイトレス waiter
+エンジニア engineer
+おいしゃさん doctor
+かいしゃ company
+かいしゃいん company employee
+がくせい student
+ぎんこう bank
+ぎんこういん banker
+けいさつかん　 police officer
+こうこう high school
+こうこうせい high school student
+サラリーマン salaryman
+さんねんせい junior
+しごと job
+じゅうしょ address
+せんせい teacher
+だいがく university
+だいがくいんせい　 graduate student
+だいがくせい college student
+タイピスト typist
+でんわばんごう phone number
+なまえ name
+にねんせい sophomore
+パイロット pilot
+よねんせい senior

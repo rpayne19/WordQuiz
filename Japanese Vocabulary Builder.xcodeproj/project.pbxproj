@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B035D531A0FC87B00279128 /* QuizResultsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B035D521A0FC87B00279128 /* QuizResultsScreen.m */; };
+		8B035D551A10E71C00279128 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8B035D541A10E71C00279128 /* test.txt */; };
+		8B06230F1A2D71FB0097A38F /* SKEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B06230E1A2D71FB0097A38F /* SKEffects.m */; };
+		8B0623111A2D7A240097A38F /* buttonWood.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0623101A2D7A240097A38F /* buttonWood.png */; };
+		8B0623131A2D7F7C0097A38F /* backgroundWood.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0623121A2D7F7C0097A38F /* backgroundWood.png */; };
+		8B0623151A2D84100097A38F /* seperatorWood.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0623141A2D84100097A38F /* seperatorWood.png */; };
+		8B0623171A353CB50097A38F /* titleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0623161A353CB50097A38F /* titleBackground.png */; };
+		8B109AA419303F4E00394BFA /* WordCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B109AA319303F4E00394BFA /* WordCard.m */; };
+		8B109AA6193040C900394BFA /* wordcard.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B109AA5193040C900394BFA /* wordcard.png */; };
+		8B192D6019CC148800FC2E34 /* QuizSelectionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B192D5F19CC148800FC2E34 /* QuizSelectionScene.m */; };
+		8B19C557193021B5008A6A51 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B19C556193021B5008A6A51 /* GameScene.m */; };
+		8B19C55A19302713008A6A51 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B19C55919302713008A6A51 /* Word.m */; };
+		8B416916192BF8190018D1EB /* ParseWordFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B416915192BF8190018D1EB /* ParseWordFile.m */; };
+		8B46C0581A4E9124005F07FB /* hiraganaReview.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B46C0571A4E9124005F07FB /* hiraganaReview.png */; };
+		8B46C05A1A4E9137005F07FB /* katakanaReview.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B46C0591A4E9137005F07FB /* katakanaReview.png */; };
+		8B46C05D1A4E9180005F07FB /* HiraganaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B46C05C1A4E9180005F07FB /* HiraganaScene.m */; };
+		8B46C0601A4E9193005F07FB /* KatakanaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B46C05F1A4E9193005F07FB /* KatakanaScene.m */; };
+		8B8580AB1A353EFE00302FC0 /* titleBackgroundCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8580A71A353EFE00302FC0 /* titleBackgroundCloud.png */; };
+		8B8580AC1A353EFE00302FC0 /* titleBackgroundFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8580A81A353EFE00302FC0 /* titleBackgroundFace.png */; };
+		8B8580AD1A353EFE00302FC0 /* titleBackgroundJapanese.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8580A91A353EFE00302FC0 /* titleBackgroundJapanese.png */; };
+		8B8580AE1A353EFE00302FC0 /* titleBackgroundTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8580AA1A353EFE00302FC0 /* titleBackgroundTitle.png */; };
 		8BFFEFB4192865AA00848CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB3192865AA00848CFE /* Foundation.framework */; };
 		8BFFEFB6192865AA00848CFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB5192865AA00848CFE /* CoreGraphics.framework */; };
 		8BFFEFB8192865AA00848CFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB7192865AA00848CFE /* UIKit.framework */; };
@@ -17,14 +38,19 @@
 		8BFFEFC9192865AA00848CFE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFC7192865AA00848CFE /* Main_iPhone.storyboard */; };
 		8BFFEFCC192865AA00848CFE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFCA192865AA00848CFE /* Main_iPad.storyboard */; };
 		8BFFEFCF192865AA00848CFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFEFCE192865AA00848CFE /* ViewController.m */; };
-		8BFFEFD2192865AA00848CFE /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFEFD1192865AA00848CFE /* MyScene.m */; };
-		8BFFEFD4192865AA00848CFE /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFD3192865AA00848CFE /* Spaceship.png */; };
+		8BFFEFD2192865AA00848CFE /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFEFD1192865AA00848CFE /* TitleScene.m */; };
 		8BFFEFD6192865AA00848CFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFD5192865AA00848CFE /* Images.xcassets */; };
 		8BFFEFDD192865AA00848CFE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFDC192865AA00848CFE /* XCTest.framework */; };
 		8BFFEFDE192865AA00848CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB3192865AA00848CFE /* Foundation.framework */; };
 		8BFFEFDF192865AA00848CFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB7192865AA00848CFE /* UIKit.framework */; };
 		8BFFEFE7192865AA00848CFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFE5192865AA00848CFE /* InfoPlist.strings */; };
 		8BFFEFE9192865AA00848CFE /* Japanese_Vocabulary_BuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFEFE8192865AA00848CFE /* Japanese_Vocabulary_BuilderTests.m */; };
+		8BFFEFF3192867CF00848CFE /* wordbank1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFF2192867CF00848CFE /* wordbank1.txt */; };
+		8BFFEFF519286B8700848CFE /* wordbank2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFF419286B8700848CFE /* wordbank2.txt */; };
+		8BFFEFF7192871AF00848CFE /* wordbank3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFF6192871AF00848CFE /* wordbank3.txt */; };
+		8BFFEFF9192B184600848CFE /* wordbank4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFF8192B184600848CFE /* wordbank4.txt */; };
+		8BFFEFFB192B1CE000848CFE /* wordbank5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFFA192B1CE000848CFE /* wordbank5.txt */; };
+		8BFFEFFD192B222C00848CFE /* wordbank6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BFFEFFC192B222C00848CFE /* wordbank6.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +64,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B035D511A0FC87B00279128 /* QuizResultsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizResultsScreen.h; sourceTree = "<group>"; };
+		8B035D521A0FC87B00279128 /* QuizResultsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizResultsScreen.m; sourceTree = "<group>"; };
+		8B035D541A10E71C00279128 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		8B0515841A39505000AC13D7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8B06230D1A2D71FB0097A38F /* SKEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKEffects.h; sourceTree = "<group>"; };
+		8B06230E1A2D71FB0097A38F /* SKEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKEffects.m; sourceTree = "<group>"; };
+		8B0623101A2D7A240097A38F /* buttonWood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonWood.png; sourceTree = "<group>"; };
+		8B0623121A2D7F7C0097A38F /* backgroundWood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundWood.png; sourceTree = "<group>"; };
+		8B0623141A2D84100097A38F /* seperatorWood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seperatorWood.png; sourceTree = "<group>"; };
+		8B0623161A353CB50097A38F /* titleBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackground.png; sourceTree = "<group>"; };
+		8B109AA219303F4E00394BFA /* WordCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordCard.h; sourceTree = "<group>"; };
+		8B109AA319303F4E00394BFA /* WordCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordCard.m; sourceTree = "<group>"; };
+		8B109AA5193040C900394BFA /* wordcard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wordcard.png; sourceTree = "<group>"; };
+		8B192D5E19CC148800FC2E34 /* QuizSelectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizSelectionScene.h; sourceTree = "<group>"; };
+		8B192D5F19CC148800FC2E34 /* QuizSelectionScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizSelectionScene.m; sourceTree = "<group>"; };
+		8B19C555193021B5008A6A51 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		8B19C556193021B5008A6A51 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		8B19C55819302713008A6A51 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		8B19C55919302713008A6A51 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		8B416914192BF8190018D1EB /* ParseWordFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseWordFile.h; sourceTree = "<group>"; };
+		8B416915192BF8190018D1EB /* ParseWordFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseWordFile.m; sourceTree = "<group>"; };
+		8B46C0571A4E9124005F07FB /* hiraganaReview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiraganaReview.png; sourceTree = "<group>"; };
+		8B46C0591A4E9137005F07FB /* katakanaReview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katakanaReview.png; sourceTree = "<group>"; };
+		8B46C05B1A4E9180005F07FB /* HiraganaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaScene.h; sourceTree = "<group>"; };
+		8B46C05C1A4E9180005F07FB /* HiraganaScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiraganaScene.m; sourceTree = "<group>"; };
+		8B46C05E1A4E9193005F07FB /* KatakanaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KatakanaScene.h; sourceTree = "<group>"; };
+		8B46C05F1A4E9193005F07FB /* KatakanaScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KatakanaScene.m; sourceTree = "<group>"; };
+		8B8580A71A353EFE00302FC0 /* titleBackgroundCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundCloud.png; sourceTree = "<group>"; };
+		8B8580A81A353EFE00302FC0 /* titleBackgroundFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundFace.png; sourceTree = "<group>"; };
+		8B8580A91A353EFE00302FC0 /* titleBackgroundJapanese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundJapanese.png; sourceTree = "<group>"; };
+		8B8580AA1A353EFE00302FC0 /* titleBackgroundTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundTitle.png; sourceTree = "<group>"; };
 		8BFFEFB0192865AA00848CFE /* Japanese Vocabulary Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Japanese Vocabulary Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFFEFB3192865AA00848CFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BFFEFB5192865AA00848CFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,15 +110,20 @@
 		8BFFEFCB192865AA00848CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		8BFFEFCD192865AA00848CFE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8BFFEFCE192865AA00848CFE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8BFFEFD0192865AA00848CFE /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		8BFFEFD1192865AA00848CFE /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		8BFFEFD3192865AA00848CFE /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		8BFFEFD0192865AA00848CFE /* TitleScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		8BFFEFD1192865AA00848CFE /* TitleScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
 		8BFFEFD5192865AA00848CFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BFFEFDB192865AA00848CFE /* Japanese Vocabulary BuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Japanese Vocabulary BuilderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFFEFDC192865AA00848CFE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8BFFEFE4192865AA00848CFE /* Japanese Vocabulary BuilderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Japanese Vocabulary BuilderTests-Info.plist"; sourceTree = "<group>"; };
 		8BFFEFE6192865AA00848CFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8BFFEFE8192865AA00848CFE /* Japanese_Vocabulary_BuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Japanese_Vocabulary_BuilderTests.m; sourceTree = "<group>"; };
+		8BFFEFF2192867CF00848CFE /* wordbank1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordbank1.txt; sourceTree = "<group>"; };
+		8BFFEFF419286B8700848CFE /* wordbank2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordbank2.txt; sourceTree = "<group>"; };
+		8BFFEFF6192871AF00848CFE /* wordbank3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordbank3.txt; sourceTree = "<group>"; };
+		8BFFEFF8192B184600848CFE /* wordbank4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordbank4.txt; sourceTree = "<group>"; };
+		8BFFEFFA192B1CE000848CFE /* wordbank5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordbank5.txt; sourceTree = "<group>"; };
+		8BFFEFFC192B222C00848CFE /* wordbank6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordbank6.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +190,46 @@
 				8BFFEFC7192865AA00848CFE /* Main_iPhone.storyboard */,
 				8BFFEFCA192865AA00848CFE /* Main_iPad.storyboard */,
 				8BFFEFCD192865AA00848CFE /* ViewController.h */,
+				8B0515841A39505000AC13D7 /* Constants.h */,
 				8BFFEFCE192865AA00848CFE /* ViewController.m */,
-				8BFFEFD0192865AA00848CFE /* MyScene.h */,
-				8BFFEFD1192865AA00848CFE /* MyScene.m */,
-				8BFFEFD3192865AA00848CFE /* Spaceship.png */,
+				8B19C55819302713008A6A51 /* Word.h */,
+				8B19C55919302713008A6A51 /* Word.m */,
+				8B109AA219303F4E00394BFA /* WordCard.h */,
+				8B109AA319303F4E00394BFA /* WordCard.m */,
+				8B416914192BF8190018D1EB /* ParseWordFile.h */,
+				8B416915192BF8190018D1EB /* ParseWordFile.m */,
+				8BFFEFF2192867CF00848CFE /* wordbank1.txt */,
+				8BFFEFF419286B8700848CFE /* wordbank2.txt */,
+				8BFFEFF6192871AF00848CFE /* wordbank3.txt */,
+				8BFFEFF8192B184600848CFE /* wordbank4.txt */,
+				8BFFEFFA192B1CE000848CFE /* wordbank5.txt */,
+				8BFFEFFC192B222C00848CFE /* wordbank6.txt */,
+				8B035D541A10E71C00279128 /* test.txt */,
+				8BFFEFD0192865AA00848CFE /* TitleScene.h */,
+				8BFFEFD1192865AA00848CFE /* TitleScene.m */,
+				8B46C05B1A4E9180005F07FB /* HiraganaScene.h */,
+				8B46C05C1A4E9180005F07FB /* HiraganaScene.m */,
+				8B46C05E1A4E9193005F07FB /* KatakanaScene.h */,
+				8B46C05F1A4E9193005F07FB /* KatakanaScene.m */,
+				8B06230D1A2D71FB0097A38F /* SKEffects.h */,
+				8B06230E1A2D71FB0097A38F /* SKEffects.m */,
+				8B192D5E19CC148800FC2E34 /* QuizSelectionScene.h */,
+				8B192D5F19CC148800FC2E34 /* QuizSelectionScene.m */,
+				8B19C555193021B5008A6A51 /* GameScene.h */,
+				8B19C556193021B5008A6A51 /* GameScene.m */,
+				8B035D511A0FC87B00279128 /* QuizResultsScreen.h */,
+				8B035D521A0FC87B00279128 /* QuizResultsScreen.m */,
+				8B109AA5193040C900394BFA /* wordcard.png */,
+				8B0623101A2D7A240097A38F /* buttonWood.png */,
+				8B0623141A2D84100097A38F /* seperatorWood.png */,
+				8B0623121A2D7F7C0097A38F /* backgroundWood.png */,
+				8B0623161A353CB50097A38F /* titleBackground.png */,
+				8B8580A71A353EFE00302FC0 /* titleBackgroundCloud.png */,
+				8B8580A81A353EFE00302FC0 /* titleBackgroundFace.png */,
+				8B8580A91A353EFE00302FC0 /* titleBackgroundJapanese.png */,
+				8B8580AA1A353EFE00302FC0 /* titleBackgroundTitle.png */,
+				8B46C0571A4E9124005F07FB /* hiraganaReview.png */,
+				8B46C0591A4E9137005F07FB /* katakanaReview.png */,
 				8BFFEFD5192865AA00848CFE /* Images.xcassets */,
 				8BFFEFBC192865AA00848CFE /* Supporting Files */,
 			);
@@ -243,11 +341,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BFFEFD4192865AA00848CFE /* Spaceship.png in Resources */,
+				8B0623111A2D7A240097A38F /* buttonWood.png in Resources */,
+				8B8580AD1A353EFE00302FC0 /* titleBackgroundJapanese.png in Resources */,
+				8B0623151A2D84100097A38F /* seperatorWood.png in Resources */,
+				8B0623171A353CB50097A38F /* titleBackground.png in Resources */,
+				8B109AA6193040C900394BFA /* wordcard.png in Resources */,
 				8BFFEFD6192865AA00848CFE /* Images.xcassets in Resources */,
+				8B035D551A10E71C00279128 /* test.txt in Resources */,
+				8BFFEFFB192B1CE000848CFE /* wordbank5.txt in Resources */,
 				8BFFEFCC192865AA00848CFE /* Main_iPad.storyboard in Resources */,
+				8BFFEFFD192B222C00848CFE /* wordbank6.txt in Resources */,
+				8B8580AC1A353EFE00302FC0 /* titleBackgroundFace.png in Resources */,
 				8BFFEFC9192865AA00848CFE /* Main_iPhone.storyboard in Resources */,
+				8B8580AB1A353EFE00302FC0 /* titleBackgroundCloud.png in Resources */,
+				8BFFEFF9192B184600848CFE /* wordbank4.txt in Resources */,
+				8BFFEFF7192871AF00848CFE /* wordbank3.txt in Resources */,
+				8B8580AE1A353EFE00302FC0 /* titleBackgroundTitle.png in Resources */,
+				8BFFEFF519286B8700848CFE /* wordbank2.txt in Resources */,
+				8B46C0581A4E9124005F07FB /* hiraganaReview.png in Resources */,
+				8BFFEFF3192867CF00848CFE /* wordbank1.txt in Resources */,
+				8B46C05A1A4E9137005F07FB /* katakanaReview.png in Resources */,
 				8BFFEFC0192865AA00848CFE /* InfoPlist.strings in Resources */,
+				8B0623131A2D7F7C0097A38F /* backgroundWood.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +381,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BFFEFD2192865AA00848CFE /* MyScene.m in Sources */,
+				8B192D6019CC148800FC2E34 /* QuizSelectionScene.m in Sources */,
+				8BFFEFD2192865AA00848CFE /* TitleScene.m in Sources */,
 				8BFFEFCF192865AA00848CFE /* ViewController.m in Sources */,
 				8BFFEFC6192865AA00848CFE /* AppDelegate.m in Sources */,
+				8B06230F1A2D71FB0097A38F /* SKEffects.m in Sources */,
+				8B109AA419303F4E00394BFA /* WordCard.m in Sources */,
 				8BFFEFC2192865AA00848CFE /* main.m in Sources */,
+				8B46C05D1A4E9180005F07FB /* HiraganaScene.m in Sources */,
+				8B19C557193021B5008A6A51 /* GameScene.m in Sources */,
+				8B035D531A0FC87B00279128 /* QuizResultsScreen.m in Sources */,
+				8B416916192BF8190018D1EB /* ParseWordFile.m in Sources */,
+				8B46C0601A4E9193005F07FB /* KatakanaScene.m in Sources */,
+				8B19C55A19302713008A6A51 /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +533,7 @@
 				INFOPLIST_FILE = "Japanese Vocabulary Builder/Japanese Vocabulary Builder-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -423,6 +548,7 @@
 				INFOPLIST_FILE = "Japanese Vocabulary Builder/Japanese Vocabulary Builder-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -486,6 +612,7 @@
 				8BFFEFEE192865AB00848CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BFFEFEF192865AB00848CFE /* Build configuration list for PBXNativeTarget "Japanese Vocabulary BuilderTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +621,7 @@
 				8BFFEFF1192865AB00848CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
