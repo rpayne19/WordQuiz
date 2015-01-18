@@ -28,6 +28,8 @@
 		8B8580AC1A353EFE00302FC0 /* titleBackgroundFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8580A81A353EFE00302FC0 /* titleBackgroundFace.png */; };
 		8B8580AD1A353EFE00302FC0 /* titleBackgroundJapanese.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8580A91A353EFE00302FC0 /* titleBackgroundJapanese.png */; };
 		8B8580AE1A353EFE00302FC0 /* titleBackgroundTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8580AA1A353EFE00302FC0 /* titleBackgroundTitle.png */; };
+		8BFBC00E1A6B654500734846 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBC00D1A6B654500734846 /* Button.m */; };
+		8BFBC0101A6BA2FE00734846 /* titleBackgroundLevel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBC00F1A6BA2FE00734846 /* titleBackgroundLevel1.png */; };
 		8BFFEFB4192865AA00848CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB3192865AA00848CFE /* Foundation.framework */; };
 		8BFFEFB6192865AA00848CFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB5192865AA00848CFE /* CoreGraphics.framework */; };
 		8BFFEFB8192865AA00848CFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFFEFB7192865AA00848CFE /* UIKit.framework */; };
@@ -95,6 +97,9 @@
 		8B8580A81A353EFE00302FC0 /* titleBackgroundFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundFace.png; sourceTree = "<group>"; };
 		8B8580A91A353EFE00302FC0 /* titleBackgroundJapanese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundJapanese.png; sourceTree = "<group>"; };
 		8B8580AA1A353EFE00302FC0 /* titleBackgroundTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundTitle.png; sourceTree = "<group>"; };
+		8BFBC00C1A6B654500734846 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		8BFBC00D1A6B654500734846 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		8BFBC00F1A6BA2FE00734846 /* titleBackgroundLevel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleBackgroundLevel1.png; sourceTree = "<group>"; };
 		8BFFEFB0192865AA00848CFE /* Japanese Vocabulary Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Japanese Vocabulary Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFFEFB3192865AA00848CFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BFFEFB5192865AA00848CFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -194,6 +199,8 @@
 				8BFFEFCE192865AA00848CFE /* ViewController.m */,
 				8B19C55819302713008A6A51 /* Word.h */,
 				8B19C55919302713008A6A51 /* Word.m */,
+				8BFBC00C1A6B654500734846 /* Button.h */,
+				8BFBC00D1A6B654500734846 /* Button.m */,
 				8B109AA219303F4E00394BFA /* WordCard.h */,
 				8B109AA319303F4E00394BFA /* WordCard.m */,
 				8B416914192BF8190018D1EB /* ParseWordFile.h */,
@@ -225,6 +232,7 @@
 				8B0623121A2D7F7C0097A38F /* backgroundWood.png */,
 				8B0623161A353CB50097A38F /* titleBackground.png */,
 				8B8580A71A353EFE00302FC0 /* titleBackgroundCloud.png */,
+				8BFBC00F1A6BA2FE00734846 /* titleBackgroundLevel1.png */,
 				8B8580A81A353EFE00302FC0 /* titleBackgroundFace.png */,
 				8B8580A91A353EFE00302FC0 /* titleBackgroundJapanese.png */,
 				8B8580AA1A353EFE00302FC0 /* titleBackgroundTitle.png */,
@@ -359,6 +367,7 @@
 				8B8580AE1A353EFE00302FC0 /* titleBackgroundTitle.png in Resources */,
 				8BFFEFF519286B8700848CFE /* wordbank2.txt in Resources */,
 				8B46C0581A4E9124005F07FB /* hiraganaReview.png in Resources */,
+				8BFBC0101A6BA2FE00734846 /* titleBackgroundLevel1.png in Resources */,
 				8BFFEFF3192867CF00848CFE /* wordbank1.txt in Resources */,
 				8B46C05A1A4E9137005F07FB /* katakanaReview.png in Resources */,
 				8BFFEFC0192865AA00848CFE /* InfoPlist.strings in Resources */,
@@ -382,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B192D6019CC148800FC2E34 /* QuizSelectionScene.m in Sources */,
+				8BFBC00E1A6B654500734846 /* Button.m in Sources */,
 				8BFFEFD2192865AA00848CFE /* TitleScene.m in Sources */,
 				8BFFEFCF192865AA00848CFE /* ViewController.m in Sources */,
 				8BFFEFC6192865AA00848CFE /* AppDelegate.m in Sources */,

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA0C761C-333E-430F-A0A2-EA4482575FC7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Japanese Vocabulary Builder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EC33A89D-C53C-46C2-9C86-0273F011B0AB</key>
+		<string>https://github.com/rpayne19/WordQuiz.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Japanese Vocabulary Builder.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EC33A89D-C53C-46C2-9C86-0273F011B0AB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rpayne19/WordQuiz.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EC33A89D-C53C-46C2-9C86-0273F011B0AB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EC33A89D-C53C-46C2-9C86-0273F011B0AB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Japanese Vocabulary Builder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

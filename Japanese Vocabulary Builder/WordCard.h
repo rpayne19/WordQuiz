@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface WordCard : NSObject{
+@interface WordCard : SKSpriteNode{
     SKSpriteNode        *sprite;
     SKLabelNode         *wordLabel;
     NSString            *word;

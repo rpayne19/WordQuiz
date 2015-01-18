@@ -23,7 +23,11 @@
 -(id)initWithSize:(CGSize) size andScore:(CGFloat)score andQuizNumber:(NSString*)aQuizNumber andWordsInQuiz:(NSMutableArray*)quizWords{
     if (self = [super initWithSize:size]) {
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        SKNode *background = [[SKSpriteNode alloc]initWithImageNamed:@"backgroundWood"];
+        [background setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0)];
+        
+        [self addChild:background];
+        
         quizNum = aQuizNumber;
         quizLabel = [SKLabelNode new];
         scoreLabel = [SKLabelNode new];
@@ -32,60 +36,63 @@
         
         quizLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
         quizLabel.fontSize = 36;
-        quizLabel.position = CGPointMake(CGRectGetMidX(self.frame)/1.5,
+        quizLabel.position = CGPointMake(CGRectGetMaxX(self.frame)/2,
                                          self.frame.size.height - (self.frame.size.height * 0.2));
         
         scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
         scoreLabel.fontSize = 36;
-        scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame)/1.5,
+        scoreLabel.position = CGPointMake(CGRectGetMaxX(self.frame)/2,
                                           self.frame.size.height - (self.frame.size.height * 0.4));
         
         numOfWordsInQuizLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
         numOfWordsInQuizLabel.fontSize = 36;
-        numOfWordsInQuizLabel.position = CGPointMake(CGRectGetMidX(self.frame),
+        numOfWordsInQuizLabel.position = CGPointMake(CGRectGetMaxX(self.frame)/2,
                                                      self.frame.size.height - (self.frame.size.height * 0.6));
         
         retryLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
         retryLabel.fontSize = 36;
-        retryLabel.position = CGPointMake(CGRectGetMidX(self.frame)/1.5,
+        retryLabel.position = CGPointMake(CGRectGetMidX(self.frame)/2,
                                 self.frame.size.height - (self.frame.size.height * 0.8));
         
-        yesButton = [[WordCard alloc]init];
-        [yesButton setPositionTo:CGPointMake(CGRectGetMidX(self.frame)/1.5 + 120,
+        yesButton = [Button new];
+        [yesButton setButtonLabelTo:@"Yes"];
+        [yesButton setPositionTo:CGPointMake(CGRectGetMidX(self.frame)/1.5 + 150,
          self.frame.size.height - (self.frame.size.height * 0.8))];
         [yesButton addTo:self];
-        [yesButton setLabelTo:@"Yes"];
+ 
+        noButton = [Button new];
+        [noButton setButtonLabelTo:@"No"];
+        [noButton setPositionTo: CGPointMake(CGRectGetMidX(self.frame)/1.5 + 280,
+                                             self.frame.size.height - (self.frame.size.height * 0.8))];
+        [noButton addTo:self];
         
-        yesLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
-        yesLabel.fontSize = 36;
-        yesLabel.position = CGPointMake(CGRectGetMidX(self.frame)/1.5 + 120,
-                                        self.frame.size.height - (self.frame.size.height * 0.8));
-        
-        noLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
-        noLabel.fontSize = 36;
-        noLabel.position = CGPointMake(CGRectGetMidX(self.frame)/1.5 + 200,
-                                        self.frame.size.height - (self.frame.size.height * 0.8));
         wordBank = quizWords;
         
         [quizLabel setText:[NSString stringWithFormat:@"Quiz: %@", quizNum]];
         [scoreLabel setText:[NSString stringWithFormat:@"Score: %@%%",[NSNumber numberWithFloat:score]]];
         [numOfWordsInQuizLabel setText:[NSString stringWithFormat:@"Number of Words: %i", [quizWords count]]];
         [retryLabel setText:@"Retry ?"];
-        [yesLabel setText:@"Yes"];
-        [noLabel setText:@"No"];
-    
+  
+        [quizLabel setFontColor:[UIColor blackColor]];
+        [scoreLabel setFontColor:[UIColor blackColor]];
+        [numOfWordsInQuizLabel setFontColor:[UIColor blackColor]];
+        [retryLabel setFontColor:[UIColor whiteColor]];
+        
+        [quizLabel setHorizontalAlignmentMode:SKLabelHorizontalAlignmentModeCenter];
+        [scoreLabel setHorizontalAlignmentMode:SKLabelHorizontalAlignmentModeCenter];
+        [numOfWordsInQuizLabel setHorizontalAlignmentMode:SKLabelHorizontalAlignmentModeCenter];
+        
         [self addChild:quizLabel];
         [self addChild:retryLabel];
         [self addChild:numOfWordsInQuizLabel];
         [self addChild:scoreLabel];
-        [self addChild:yesLabel];
-        [self addChild:noLabel];
     
     }
     return self;
 }
 
 -(void)transitionToTitle {
+    
     SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionDown duration:1.0];
     TitleScene *title = [[TitleScene alloc] initWithSize:self.size];
     title.scaleMode = SKSceneScaleModeAspectFill;
@@ -93,7 +100,7 @@
 }
 
 -(void)transitionBackToQuiz {
-    SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1.0];
+    SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
     GameScene *gameScene = [[GameScene alloc]
                             initWithSize:self.size
                             andWordBank:wordBank
@@ -105,9 +112,9 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
-        if([yesLabel containsPoint:location]) {
+        if([yesButton containsPoint:location]) {
             [self transitionBackToQuiz];
-        } else if([noLabel containsPoint:location]) {
+        } else if([noButton containsPoint:location]) {
             [self transitionToTitle];
         }
     }

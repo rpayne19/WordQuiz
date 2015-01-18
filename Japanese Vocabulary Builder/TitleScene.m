@@ -13,6 +13,7 @@
 #import "HiraganaScene.h"
 #import "KatakanaScene.h"
 #import "SKEffects.h"
+#import "Button.h"
 
 @implementation TitleScene
 
@@ -32,21 +33,16 @@
                 
         backgroundImage = [[SKSpriteNode alloc]initWithImageNamed:@"titleBackground"];
         [backgroundImage setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0)];
- //       [backgroundImage setXScale:self.xScale];
- //       [backgroundImage setYScale:self.yScale];
         [self addChild:backgroundImage];
         
-        menuLabel = [[SKSpriteNode alloc]initWithImageNamed:@"titleBackgroundTitle"];
-        [menuLabel setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0)];
-//        [menuLabel setXScale:self.xScale / 2.0];
-//        [menuLabel setYScale:self.yScale / 2.0];
+        menuLabel = [[SKSpriteNode alloc]initWithImageNamed:@"titleBackgroundLevel1"];
+        [menuLabel setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0 + 50)];
         [self addChild:menuLabel];
         
         kaomojiMan = [[SKSpriteNode alloc]initWithImageNamed:@"titleBackgroundFace"];
         [kaomojiMan setPosition:CGPointMake(self.size.width/2.0,(self.size.height/2.0) - 300)];
 //        [kaomojiMan setXScale:self.xScale / 2.0];
 //        [kaomojiMan setYScale:self.yScale / 2.0];
-        [self addChild:kaomojiMan];
         SKAction *moveUp = [SKAction moveToY:self.size.height/1.7 duration:3.0];
         [kaomojiMan runAction:moveUp];
         
@@ -69,36 +65,41 @@
         [self addChild:cloudThree];
         
         japaneseText = [[SKSpriteNode alloc]initWithImageNamed:@"titleBackgroundJapanese"];
-        [japaneseText setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0-200)];
+        [japaneseText setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0-175)];
 //        [japaneseText setXScale:self.xScale / 2.0];
 //        [japaneseText setYScale:self.yScale / 2.0];
         [japaneseText setAlpha:0.0f];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [japaneseText runAction:[SKAction fadeAlphaTo:1.0f duration:1.2f]];
         });
+        
+        
+        myLabel = [Button new];
+        
+        [myLabel setButtonLabelTo: @"Quiz Mode"];
+        [myLabel setPositionTo: CGPointMake(-1100,
+                                       CGRectGetMaxY(self.frame) * (3.0/5.0))];
+        [myLabel addTo:self];
+        SKAction *moveRight = [SKAction moveToX:self.size.width/2.0 duration:2.5];
+        [myLabel runAction:moveRight];
+        
+        hiraganaLabel = [Button new];
+        [hiraganaLabel setButtonLabelTo:@"Hiragana Review"];
+        [hiraganaLabel setPositionTo:CGPointMake(-800,
+                                                 CGRectGetMaxY(self.frame) * (2.2/5.0))];
+        [hiraganaLabel addTo:self];
+        [hiraganaLabel runAction:moveRight];
+
+        katakanaLabel = [Button new];
+        [katakanaLabel setButtonLabelTo:@"Katakana Review"];
+        [katakanaLabel setPositionTo:CGPointMake(-500,
+                                                 CGRectGetMaxY(self.frame) * (1.4/5.0))];
+        [katakanaLabel addTo:self];
+        [katakanaLabel runAction:moveRight];
+
         [self addChild:japaneseText];
-        
-        
-        myLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
-        myLabel.text = @"Quiz Mode";
-        myLabel.fontSize = 52;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMaxY(self.frame) * (3.0/5.0));
-        [self addChild:myLabel];
-        
-        hiraganaLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
-        hiraganaLabel.text = @"Hiragana Review";
-        hiraganaLabel.fontSize = 52;
-        hiraganaLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMaxY(self.frame) * (2.2/5.0));
-        [self addChild:hiraganaLabel];
-        
-        katakanaLabel = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
-        katakanaLabel.text = @"Katakana Review";
-        katakanaLabel.fontSize = 52;
-        katakanaLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMaxY(self.frame) * (1.4/5.0));
-        [self addChild:katakanaLabel];
+        [self addChild:kaomojiMan];
+
     }
     return self;
 }

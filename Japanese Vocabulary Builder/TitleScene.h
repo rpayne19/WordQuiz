@@ -7,13 +7,14 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "Button.h"
 
 @interface TitleScene : SKScene{
     NSMutableArray *wordBank;
     CGSize viewSize;
-    SKLabelNode *myLabel;
-    SKLabelNode *hiraganaLabel;
-    SKLabelNode *katakanaLabel;
+    Button *myLabel;
+    Button *hiraganaLabel;
+    Button *katakanaLabel;
     SKSpriteNode *menuLabel;
     SKSpriteNode *backgroundImage;
     SKSpriteNode *kaomojiMan;

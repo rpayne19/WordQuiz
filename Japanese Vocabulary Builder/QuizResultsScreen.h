@@ -8,15 +8,14 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "WordCard.h"
-
+#import "Button.h"
 @interface QuizResultsScreen : SKScene{
     SKLabelNode     *quizLabel;
     SKLabelNode     *scoreLabel;
     SKLabelNode     *numOfWordsInQuizLabel;
     SKLabelNode     *retryLabel;
-    SKLabelNode     *yesLabel;
-    WordCard        *yesButton;
-    SKLabelNode     *noLabel;
+    Button          *yesButton;
+    Button          *noButton;
     NSMutableArray  *wordBank;
     NSString        *quizNum;
     

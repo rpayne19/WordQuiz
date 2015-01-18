@@ -18,10 +18,11 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
-//         Later when background image is used:
-//        [background setXScale:self.xScale /2.0f];
-//        [background setYScale:self.yScale + 0.6];
+        SKNode *background = [[SKSpriteNode alloc]initWithImageNamed:@"backgroundWood"];
+        [background setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0)];
+        
+        [self addChild:background];
+        
         quiz1 = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
         quiz1.text = @"Quiz 1";
         quiz1.fontSize = 32;
@@ -69,7 +70,7 @@
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         if([quiz1 containsPoint:location]){
-            SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1.0];
+            SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
             if(wordBank == NULL){
                 wordBank = [[NSMutableArray alloc]init];
                 [ParseWordFile parseWordFile: wordBank withFileName:@"test"];
@@ -82,7 +83,7 @@
             [self.scene.view presentScene: gameScene transition:reveal];
         }
         if([quiz2 containsPoint:location]){
-            SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1.0];
+            SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
             if(wordBank == NULL){
                 wordBank = [[NSMutableArray alloc]init];
                 [ParseWordFile parseWordFile: wordBank withFileName:@"wordbank2"];
@@ -94,7 +95,7 @@
             [self.scene.view presentScene: gameScene transition:reveal];
         }else
         if([quiz3 containsPoint:location]){
-            SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1.0];
+            SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
             if(wordBank == NULL){
                 wordBank = [[NSMutableArray alloc]init];
                 [ParseWordFile parseWordFile: wordBank withFileName:@"wordbank3"];
@@ -106,7 +107,7 @@
             [self.scene.view presentScene: gameScene transition:reveal];
         }else
         if([quiz4 containsPoint:location]){
-            SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1.0];
+            SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
             if(wordBank == NULL){
                 wordBank = [[NSMutableArray alloc]init];
                 [ParseWordFile parseWordFile: wordBank withFileName:@"wordbank4"];
@@ -118,7 +119,7 @@
             [self.scene.view presentScene: gameScene transition:reveal];
         }else
         if([quiz5 containsPoint:location]){
-            SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1.0];
+            SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
             if(wordBank == NULL){
                 wordBank = [[NSMutableArray alloc]init];
                 [ParseWordFile parseWordFile: wordBank withFileName:@"wordbank5"];
@@ -130,7 +131,7 @@
             [self.scene.view presentScene: gameScene transition:reveal];
         }else
         if([quiz6 containsPoint:location]){
-            SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1.0];
+            SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
             if(wordBank == NULL){
                 wordBank = [[NSMutableArray alloc]init];
                 [ParseWordFile parseWordFile: wordBank withFileName:@"wordbank6"];

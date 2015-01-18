@@ -15,7 +15,7 @@
     if(self = [super initWithSize:size]) {
         backgroundImage = [[SKSpriteNode alloc]initWithImageNamed:@"katakanaReview"];
         [backgroundImage setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0)];
-        
+        backgroundImage.size = self.size;
         [self addChild:backgroundImage];
         
     }

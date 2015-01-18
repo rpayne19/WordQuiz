@@ -28,8 +28,6 @@
         self.backgroundColor = [SKColor colorWithRed:0.8 green:0.5 blue:0.5 alpha:1.0];
         SKNode *background = [[SKSpriteNode alloc]initWithImageNamed:@"backgroundWood"];
         [background setPosition:CGPointMake(self.size.width/2.0,self.size.height/2.0)];
-//        [background setXScale:self.xScale /2.0f];
-//        [background setYScale:self.yScale + 0.6];
 
         [self addChild:background];
         
@@ -242,7 +240,7 @@
         score = 0;
     }
     
-    SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionDown duration:1.0];
+    SKTransition *reveal = [SKTransition flipVerticalWithDuration:1.0];
     QuizResultsScreen *resultScreen = [[QuizResultsScreen alloc]initWithSize: self.size andScore:score andQuizNumber:quizNumber andWordsInQuiz:wordBank];
     
     resultScreen.scaleMode = SKSceneScaleModeAspectFill;
